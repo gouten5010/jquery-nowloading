@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Now Loading Plug-in</title>
+
+	<link rel="stylesheet" href="./css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="./css/jquery.nowloading.css" type="text/css" media="all" />
+
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.nowloading.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$('#wrap').nowloading({
+			area: '#loader',
+			useImage: true,
+			image: 'img/loader.gif',
+			useText: true,
+			text: 'Now Loading...',
+			delay: 500,
+			fadeOutSpeed: 'fast'
+		});
+	});
+	</script>
+</head>
+<body>
+
+<div id="wrap" class="contents">
+	<div class="inner">
+		<p>華麗に出てくるコンテンツ！</p>
+		<button onclick="location.reload(true)">リロードする</button>
+	</div>
+</div>
+
+</body>
+</html>

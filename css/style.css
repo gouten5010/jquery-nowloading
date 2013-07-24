@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, strong, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 13px;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+html {
+	overflow-y: scroll;
+	color: #191919;
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background:#f9f9f9;
+}
+
+::selection {
+	background: #00cc99;
+	color: #ffffff;
+}
+
+::-moz-selection {
+	background: #00cc99;
+	color: #ffffff;
+}
+
+header {
+	width:100%;
+	padding:1em 0;
+	background:#eeeeee;
+	color: #191919;
+	position:fixed;
+	top:0;
+	left:0;
+}
+header h1 {
+	font-size:12px;
+	text-align:center;
+	font-weight:bold;
+}
+
+#wrap,
+.wrapContent {
+	width:100%;
+	min-height:100%;
+	display:table;
+}
+
+#wrap .inner,
+.wrapContent #wrap {
+	display:table-cell;
+	text-align:center;
+	vertical-align: middle;
+}
+
+.wrapContent #wrap .inner {
+	display:inline-block;
+}
+
+#wrap .inner p {
+	font-size:300%;
+	color:#00cccc;
+}
+
+#wrap .inner p span {
+	font-size:12px;
+	color:#999999;
+}
+
+#wrap .inner button {
+	padding:1em 5em;
+	margin-top:30px;
+	background:#00cccc;
+	color:#ffffff;
+	font-size:120%;
+	border:none;
+	border-bottom:2px solid #dddddd;
+}
+#wrap .inner button:hover {
+	background:#0099cc;
+}
+#wrap .inner button:active {
+	margin-top:32px;
+	background:#0099cc;
+	border-bottom:none;
+}
+
