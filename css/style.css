@@ -48,22 +48,16 @@ header h1 {
 	font-weight:bold;
 }
 
-#wrap,
-.wrapContent {
+#wrap {
 	width:100%;
 	min-height:100%;
 	display:table;
 }
 
-#wrap .inner,
-.wrapContent #wrap {
+#wrap .inner {
 	display:table-cell;
 	text-align:center;
 	vertical-align: middle;
-}
-
-.wrapContent #wrap .inner {
-	display:inline-block;
 }
 
 #wrap .inner p {

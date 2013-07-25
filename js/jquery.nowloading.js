@@ -5,7 +5,7 @@
 * Required: jQuery(http://jquery.com/)
 * License: MIT
 * Update: 2013/07/25
-* Version: 0.0.1
+* Version: 0.0.2
 * Author: GOUTEN
 * URL: http://5010works.com/ http://blog.gouten.net/
 * PluginURL: https://github.com/gouten5010/jquery-nowloading
@@ -38,7 +38,7 @@
 		var setting = $.extend(options, config);
 
 		return this.each(function() {
-			//hide content area
+			//add opacity style
 			$(this).css({
 				'filter':'alpha(opacity=0)',
 				'-moz-opacity':'0',
@@ -56,8 +56,7 @@
 
 			//create loading area
 			if ( contentArea === 'body' ) {
-				$(this).children().wrapAll('<div class="wrapContent"></div>');
-				$('.wrapContent').after(loaderView);
+				$(this).prepend(loaderView);
 			} else {
 				$(this).after(loaderView);
 			}
