@@ -5,7 +5,7 @@
 * Required: jQuery(http://jquery.com/)
 * License: MIT
 * Update: 2013/07/25
-* Version: 0.0.2.1
+* Version: 0.0.3.1
 * Author: GOUTEN
 * URL: http://5010works.com/ http://blog.gouten.net/
 * PluginURL: https://github.com/gouten5010/jquery-nowloading
@@ -38,13 +38,6 @@
 		var setting = $.extend(options, config);
 
 		return this.each(function() {
-			//add opacity style
-			$(this).css({
-				'filter':'alpha(opacity=0)',
-				'-moz-opacity':'0',
-				'opacity':'0'
-			});
-
 			//define various
 			var targetStr = $(this).context.nodeName;
 			var contentArea = targetStr.toLowerCase();
@@ -70,12 +63,9 @@
 			if ( setting.useText === true ) {
 				$(areaTag).children('.inner').append('<div class="text">' + setting.text + '</div>');
 			}
-
-			//play loading
-			$(this).animate( { opacity: '1'},function(){
+			jQuery.event.add(window,"load",function(){
 				$(areaTag).delay(setting.delay).fadeOut(setting.fadeOutSpeed);
 			});
-
 		});
 	};
 })(jQuery);
