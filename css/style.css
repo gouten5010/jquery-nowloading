@@ -88,3 +88,28 @@ header h1 {
 	border-bottom:none;
 }
 
+/* スペランカー */
+.tableArt {
+	display:inline-block;
+	width:50px;
+	height:80px;
+	margin-bottom:30px;
+}
+
+td {
+	width: 5px;
+	height: 5px;
+}
+td.dot_spe_0{
+	background-color: transparent;
+}
+td.dot_spe_1{
+	background-color: #EF4224;
+}
+td.dot_spe_2{
+	background-color: #F79767;
+}
+td.dot_spe_3{
+	background-color: #3F67AF;
+}
+

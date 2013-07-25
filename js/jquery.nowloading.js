@@ -5,7 +5,7 @@
 * Required: jQuery(http://jquery.com/)
 * License: MIT
 * Update: 2013/07/25
-* Version: 0.0.2
+* Version: 0.0.2.1
 * Author: GOUTEN
 * URL: http://5010works.com/ http://blog.gouten.net/
 * PluginURL: https://github.com/gouten5010/jquery-nowloading
@@ -32,7 +32,7 @@
 			image: 'img/loader.gif',
 			useText: true,
 			text: 'Now Loading...',
-			delay: 500,
+			delay: 0,
 			fadeOutSpeed: 'fast'
 		};
 		var setting = $.extend(options, config);
